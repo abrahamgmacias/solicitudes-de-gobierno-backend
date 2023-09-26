@@ -1,5 +1,6 @@
-import "os";
-
+const authRouter = require('./routes/auth.js');
+const express = require('express');
+const cors = require('cors');
 const app = express();
 
 // Middleware 
@@ -7,8 +8,8 @@ app.use(express.json());
 app.use(cors());
 
 
-// Routes
+// // Routes
 app.use('/api/auth', authRouter);
 // app.use('/api/solicitudes', dashboardRouter);
 
-export default app;
+module.exports = app;
