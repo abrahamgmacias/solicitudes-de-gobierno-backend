@@ -10,6 +10,6 @@
     "sequelize": "^6.33.0"
   },
   "scripts": {
-    "start": "node src/app"
+    "start": "node src/server.js"
   }
 }
