@@ -10,6 +10,10 @@
     "sequelize": "^6.33.0"
   },
   "scripts": {
-    "start": "node src/server.js"
+    "start": "nodemon app.js",
+    "migrate": "npx sequelize-cli db:migrate",
+    "undo-migrate": "npx sequelize-cli db:migrate:undo:all",
+    "seed": "tsc && sequelize-cli --options-path './.sequelizerc' db:seed:all",
+    "undo-seed": "sequelize-cli --options-path './.sequelizerc' db:seed:undo:all"
   }
 }
