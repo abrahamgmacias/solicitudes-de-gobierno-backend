@@ -1,11 +1,11 @@
-import express from 'express';
-import {
+const express = require('express');
+const {
     login
-} from '../controllers/auth';
+} = require('../controllers/auth.js');
 
-const router = express.Router();
+const authRouter = express.Router();
 
-router.post("/login", async (req, res) => {
+authRouter.post("/login", async (req, res) => {
     const { email, password } = req.body;
 
     if (!email || !password) {
@@ -31,3 +31,9 @@ router.post("/login", async (req, res) => {
     })
 });
 
+
+authRouter.post("/logout", async (req, res) => {
+
+});
+
+module.exports = authRouter;
