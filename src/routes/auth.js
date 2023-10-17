@@ -26,8 +26,7 @@ authRouter.post("/login", async (req, res) => {
         id: tokenData.id,
         token: tokenData.token,
         first_name: tokenData.first_name,
-        role: tokenData.role,
-        privileges: tokenData.privileges
+        role: tokenData.role
     })
 });
 
