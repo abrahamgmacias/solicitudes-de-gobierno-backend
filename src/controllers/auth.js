@@ -12,9 +12,9 @@ async function login(email, password) {
 
     const token = "PLACEHOLDER_TOKEN";
 
-    const { id, first_name, role, privileges } = userData;
+    const { id, first_name, role } = userData;
 
-    return { loggedIn: true, id, token, first_name, role, privileges };
+    return { loggedIn: true, id, token, first_name, role };
 }
 
 

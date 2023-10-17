@@ -47,10 +47,6 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false
       },
-      privileges: {
-        type: Sequelize.JSONB,
-        allowNull: false
-      },
       active: {
         type: Sequelize.BOOLEAN,
         allowNull: false
@@ -62,7 +58,8 @@ module.exports = {
       },
       updatedAt: {
         allowNull: true,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        allowNull: true
       }
     });
   },
