@@ -25,6 +25,7 @@ authRouter.post("/login", async (req, res) => {
     return res.status(200).json({
         id: userData.id,
         token: userData.token,
+        role: userData.role,
         first_name: userData.first_name,
         last_name: userData.last_name
     })
