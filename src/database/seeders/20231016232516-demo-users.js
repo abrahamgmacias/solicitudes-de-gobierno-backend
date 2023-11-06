@@ -11,7 +11,7 @@ module.exports = {
         email: "abrahamgmacias@vuram.com",
         password: "secret_password",
         phone_number: "6142274321",
-        role_id: 1,
+        role_id: 3,
         active: true
       },
       {
